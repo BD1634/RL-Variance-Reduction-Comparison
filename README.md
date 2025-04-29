@@ -50,7 +50,7 @@ pip install torch torchvision gym matplotlib scikit-learn
 |--------------------|------------|----------------|------------------|--------------------|
 | Basic              | Bernoulli  | Moderate       | Medium           | Medium             |
 | Baseline           | Bernoulli  | **Most Stable**| Low              | **Low**            |
-| Episodic           | Bernoulli  | Less Stable    | Low              |   Low              |
+| Episodic           | Bernoulli  | Less Stable    | Medium - Low              |   Low              |
 | Basic              | Gaussian   | Unstable       | High             | High               |
 | Episodic           | Gaussian   | **Most Volatile** | **Very High** | **Very High**      |
 
