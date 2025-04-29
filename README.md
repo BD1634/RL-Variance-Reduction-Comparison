@@ -3,11 +3,11 @@
 
 This project implements and compares variants of the REINFORCE algorithm from the seminal paper _"Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning"_ (Williams, 1992), applied to a custom Gym-style environment for MNIST binary classification.
 
-## 🧠 Objective
+## Objective
 
 Apply and evaluate REINFORCE policy gradient methods in a supervised learning task, simulating reinforcement learning through episodic reward feedback in a classification setting.
 
-## ⚙️ Environment & Dependencies
+## Environment & Dependencies
 
 - Python 3.8+
 - PyTorch
@@ -21,7 +21,7 @@ Install dependencies:
 pip install torch torchvision gym matplotlib scikit-learn
 ```
 
-## 🚀 How to Run
+##  How to Run
 
 1. Launch the Jupyter notebook:
    ```bash
@@ -38,13 +38,13 @@ pip install torch torchvision gym matplotlib scikit-learn
 - **Bernoulli Policy**: stochastic binary classifier.
 - **Gaussian Policy**: continuous-valued output with learnable mean and std.
 
-## 📈 Visualizations
+## Visualizations
 
 - Reward trends (with optional exponential smoothing)
 - Gradient variance tracking per variant
 - Convergence curves by variant and policy type
 
-## 📊 Results Summary
+## Results Summary
 
 | Variant Type       | Policy     | Stability      | Reward Variance | Gradient Variance |
 |--------------------|------------|----------------|------------------|--------------------|
@@ -54,7 +54,7 @@ pip install torch torchvision gym matplotlib scikit-learn
 | Basic              | Gaussian   | Unstable       | High             | High               |
 | Episodic           | Gaussian   | **Most Volatile** | **Very High** | **Very High**      |
 
-## 📝 Notes
+## Notes
 
 - All randomness is isolated to the policy output; the rest of the network remains deterministic.
 - Uses the log-derivative trick to backpropagate through stochastic output.
